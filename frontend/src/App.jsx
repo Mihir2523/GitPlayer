@@ -19,7 +19,7 @@ export default function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/signin" element={<SignIn />} />
+        <Route path="/signin" element={<SignIn />} /> 
         <Route path="/" element={<SignUp />} />
         <Route
           path="/course/:id"
@@ -33,11 +33,11 @@ export default function App() {
           path="/course"
           element={
             <ProtectedRoute>
-              <Main />
+              <Main /> 
             </ProtectedRoute>
           }
         />
-      </Routes>
+      </Routes>           {/*This is a Minor Project*/}
     </Router>
   );
 }
