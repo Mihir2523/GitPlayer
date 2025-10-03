@@ -5,7 +5,7 @@ import {connectDB} from './utils/connectDB.js';
 import { startBot } from './Managers/BotManager.js';
 import { RedisManager } from './Managers/RedisManager.js';
 import EmailManager from './Managers/EmailManager.js';
-
+import RedditPosts from "./Managers/model.js";
 dotenv.config();
 
 const app = express();
